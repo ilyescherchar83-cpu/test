@@ -1,0 +1,58 @@
+name: supermarket_inventory
+description: تطبيق لإحصاء المنتجات في السوبرماركت بطريقة سريعة ودقيقة
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  
+  # للواجهة والتصميم
+  flutter_localizations:
+    sdk: flutter
+  google_fonts: ^5.1.0
+  flutter_svg: ^2.0.7
+  
+  # لمسح الباركود
+  mobile_scanner: ^3.4.1
+  
+  # لقاعدة البيانات المحلية
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # لإدارة الحالة
+  provider: ^6.0.5
+  
+  # لتصدير البيانات
+  excel: ^2.1.0
+  file_picker: ^5.5.0
+  permission_handler: ^10.4.3
+  intl: ^0.18.1
+  share_plus: ^7.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cairo-Light.ttf
+          weight: 300
